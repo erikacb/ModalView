@@ -14,6 +14,9 @@
 		03838A1C204DDEFD005A984A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03838A1A204DDEFD005A984A /* LaunchScreen.storyboard */; };
 		03838A27204DDEFD005A984A /* ModalViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03838A26204DDEFD005A984A /* ModalViewTests.swift */; };
 		03838A32204DDEFD005A984A /* ModalViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03838A31204DDEFD005A984A /* ModalViewUITests.swift */; };
+		03838A40204DDF11005A984A /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03838A3F204DDF11005A984A /* ModalView.swift */; };
+		03838A42204DE927005A984A /* TestNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03838A41204DE927005A984A /* TestNib.swift */; };
+		03838A44204DE932005A984A /* TestNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03838A43204DE932005A984A /* TestNib.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		03838A2D204DDEFD005A984A /* ModalViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03838A31204DDEFD005A984A /* ModalViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewUITests.swift; sourceTree = "<group>"; };
 		03838A33204DDEFD005A984A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03838A3F204DDF11005A984A /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		03838A41204DE927005A984A /* TestNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNib.swift; sourceTree = "<group>"; };
+		03838A43204DE932005A984A /* TestNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestNib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				03838A18204DDEFD005A984A /* Assets.xcassets */,
 				03838A1A204DDEFD005A984A /* LaunchScreen.storyboard */,
 				03838A1D204DDEFD005A984A /* Info.plist */,
+				03838A3F204DDF11005A984A /* ModalView.swift */,
+				03838A41204DE927005A984A /* TestNib.swift */,
+				03838A43204DE932005A984A /* TestNib.xib */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03838A1C204DDEFD005A984A /* LaunchScreen.storyboard in Resources */,
+				03838A44204DE932005A984A /* TestNib.xib in Resources */,
 				03838A19204DDEFD005A984A /* Assets.xcassets in Resources */,
 				03838A17204DDEFD005A984A /* Main.storyboard in Resources */,
 			);
@@ -259,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03838A40204DDF11005A984A /* ModalView.swift in Sources */,
+				03838A42204DE927005A984A /* TestNib.swift in Sources */,
 				03838A14204DDEFD005A984A /* ViewController.swift in Sources */,
 				03838A12204DDEFD005A984A /* AppDelegate.swift in Sources */,
 			);
@@ -427,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G9LG9TDJ7;
 				INFOPLIST_FILE = ModalView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ErikaBueno.ModalView;
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G9LG9TDJ7;
 				INFOPLIST_FILE = ModalView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ErikaBueno.ModalView;

@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func showMeSomething(_ sender: Any) {
+        self.view.addSubview(ModalView.init(nib: "TestNib", padding: 100.0))
+    }
+    
 }
 
