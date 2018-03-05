@@ -1,10 +1,27 @@
 //
 //  ModalView.swift
-//  ModalView
+//  ipi-pneoffline-ios
 //
 //  Created by Erika Bueno on 05/03/18.
-//  Copyright © 2018 Erika Bueno. All rights reserved.
+//  Copyright © 2018 Radix Eng. All rights reserved.
 //
+
+/*
+ 
+ Create a nib (.xib + .swift) and add it as a subview:
+ self.view.addSubview(ModalView.init(nib: YOUR_NIB_NAME))
+ 
+ Parameters:
+ - nib: Your nib's name (required)
+ - frame: overlay's size on screen (optional | default is the same frame as the screen a.k.a bounds)
+ - bgColor: overlay's background color (optional | default is black)
+ - modalAlpha: overlay's alpha (optional | default is 0.85)
+ - padding: space around the overlay layer (optional | default is 60.0)
+ - showDismiss: create your modal with a weird dismiss button (optional | default is true)
+ 
+ Yes, the tag is random ;)
+ 
+ */
 
 import UIKit
 
@@ -16,15 +33,19 @@ class ModalView: UIView {
     
     open var nib: String!
     open var padding: Float!
+    private var showDismiss: Bool!
     
-    init(nib: String, frame: CGRect? = BOUNDS, bgColor: UIColor? = .black, modalAlpha: CGFloat? = 0.85, padding: Float = 60.0) {
+    init(nib: String, frame: CGRect? = BOUNDS, bgColor: UIColor? = .black, modalAlpha: CGFloat? = 0.85, padding: Float = 60.0, showDismiss: Bool = true) {
         super.init(frame: frame!)
         backgroundColor = bgColor?.withAlphaComponent(modalAlpha!)
         self.nib = nib
         self.padding = padding
-        tag = 123
+        self.showDismiss = showDismiss
+        tag = 108
         showInternalContent()
-        addDismissButton()
+        if showDismiss {
+            addDismissButton()
+        }
     }
     
     override init(frame: CGRect) {
@@ -56,11 +77,10 @@ class ModalView: UIView {
     }
     
     @objc func dismiss() {
-        self.viewWithTag(123)?.removeFromSuperview()
+        self.viewWithTag(108)?.removeFromSuperview()
     }
     
 }
-
 
 extension UIView {
     @objc func removeAllSubviews() {
@@ -69,4 +89,3 @@ extension UIView {
         }
     }
 }
-

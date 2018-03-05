@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMeSomething(_ sender: Any) {
-        self.view.addSubview(ModalView.init(nib: "TestNib", padding: 100.0))
+        self.view.addSubview(ModalView.init(nib: "TestNib", showDismiss: false))
     }
     
 }
